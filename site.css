@@ -1,4 +1,38 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  /* general box sizing over */
+
+:root {
+  font-size: 16px;
+  --primary-black: #181818;
+  --primary-white: #e5eeed;
+  margin: 0;
+  padding: 0;
+  color: var(--primary-black);
+  background-color: var(--primary-white);
+
+}
 svg.bi {
     width: 1em;
     height: 1em;
+}
+
+
+/* put extra's above here */
+
+
+.employeebox {
+  font-family: Helvetica;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.employeebox > h2 {
+margin: 0;
 }
