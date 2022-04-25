@@ -15,104 +15,187 @@
 
 <body>
     <header>
-        <nav class="">
-            <div class="">
+        <nav class="navigation-pane">
 
-                <!--<a class="">
-      <img id="brand-image" src="@brandURI" alt="@(brandName == null ? "Low Volume Phone Management Portal" : brandName)" />
-  </a>-->
-
-                <a href="/" class="">
-                    Low Volume Phone Management Portal
+            <div class="navigation-item">
+                <a href="/" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                        <path fill-rule="evenodd"
+                            d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                    </svg>
+                    <span class="nav-text">Home</span>
                 </a>
-
-
-                <button class=""
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class=""></span>
-                </button>
-                <div class="">
-                    <ul class="">
-                        <li class="">
-                            <a href="/" class="">Purchased Numbers</a>
-                        </li>
-                        <li class="">
-                            <a href="/" class="">Employees</a>
-                        </li>
-                        <li class="">
-                            <a href="/" class="">Companies</a>
-                        </li>
-                        <li class="">
-                            <a href="/" class="">Privacy</a>
-                        </li>
-                    </ul>
-
-                </div>
-                <ul class="">
-                    <li class="">
-                        <a id="manage" href="/" class="">Hello Quaid!</a>
-                    </li>
-                    <li class="">
-                        <form id="logoutForm" class="">
-                            <button id="logout" type="submit" class="">Logout</button>
-                        </form>
-                    </li>
-                </ul>
             </div>
+            <div class="navigation-item">
+                <a href="/" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                    </svg>
+                    <span class="nav-text">Numbers</span>
+                </a>
+            </div>
+            <div class="navigation-item">
+                <a href="/" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                    </svg>
+                    <span class="nav-text">Employees</span>
+                </a>
+            </div>
+            <div class="navigation-item">
+                <a href="/" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-people-fill" viewBox="0 0 16 16">
+                        <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                        <path fill-rule="evenodd"
+                            d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
+                        <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+                    </svg>
+                    <span class="nav-text">Companies</span>
+                </a>
+            </div>
+
+            <div class="navigation-item nav-bottom responsive-w">
+                <a id="manage" href="/" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-gear-fill settings-btn"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                    </svg>
+                    <span class="nav-text">Hello Quaid!</span>
+                </a>
+            </div>
+            <form id="logoutForm" class="navigation-item responsive-w">
+                <a id="logout" class="nav-link" onclick="document.getElementById('logoutForm').submit()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-door-open-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M1.5 15a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1H13V2.5A1.5 1.5 0 0 0 11.5 1H11V.5a.5.5 0 0 0-.57-.495l-7 1A.5.5 0 0 0 3 1.5V15H1.5zM11 2h.5a.5.5 0 0 1 .5.5V15h-1V2zm-2.5 8c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z" />
+                    </svg>
+                    <span class="nav-text">Logout</span>
+                </a>
+            </form>
+
         </nav>
     </header>
-    <div class="">
-        <main role="main" class="">
+    <main role="main" class="">
 
-            <div class="">
-                <div class="">
-                    <div class="">
-                        <h3 class="">Employee List</h3>
-                    </div>
-                    <div class="">
-                        <a href="/" class="">
-                            Add New Employee
-                        </a>
-                    </div>
+        <div class="title-box">
+            <h1 class="page-title">Employee List</h3>
+                <a href="/" class="title-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                        <path
+                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                    </svg>
+                    <span> Add</span>
+                </a>
+        </div>
+        <hr class="break">
+        </div>
+
+        <span class="box-separator-title">Motivating Systems</span>
+
+        <div class="list-wrapper">
+            <div class="listbox">
+                <h2 class="item-name">Quaid Rodgers: (812) 677-8115</h2>
+                <div class="list-buttons">
+                    <a href="%" class="list-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="bi bi-pencil-square" viewBox="0 0 16 16">
+                            <path
+                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                            <path fill-rule="evenodd"
+                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                        </svg></a>
+                    <a href="%" class="list-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z" />
+                        </svg></a>
                 </div>
-
+                <div class="list-details">
+                    <b class="list-assigned">Assigned No: +15732458055</b>
+                    <a class="list-email" href="mailto:quaidrodgers13@hotmail.com">quaidrodgers13@hotmail.com</a>
+                </div>
             </div>
-
-            <h3 class="">Company 1</h3>
-            <div class="employeebox">
-                    <h2>Quaid Rodgers</h2>
-                    <b>+15732458055</b>
-                    <span>(812) 677-8115</span>
-                    <a class="" href="mailto:quaidrodgers13@hotmail.com">quaidrodgers13@hotmail.com</a>
-                    <a href="">Edit</a>
-                    <a href="">Delete</a>
+            <div class="listbox">
+                <h2 class="item-name">Quaid Rodgers: (812) 677-8115</h2>
+                <div class="list-buttons">
+                    <a href="%" class="list-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="bi bi-pencil-square" viewBox="0 0 16 16">
+                            <path
+                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                            <path fill-rule="evenodd"
+                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                        </svg></a>
+                    <a href="%" class="list-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z" />
+                        </svg></a>
+                </div>
+                <div class="list-details">
+                    <b class="list-assigned">Assigned No: +15732458055</b>
+                    <a class="list-email" href="mailto:quaidrodgers13@hotmail.com">quaidrodgers13@hotmail.com</a>
+                </div>
             </div>
-
-            <h3 class="">Company 1</h3>
-            <div class="">
-                <table class="">
-
-                    <tbody>
-                        <tr class="">
-
-                            <th scope="row" class="">Hostinger</th>
-                            <td class="">Steve</td>
-                            <th scope="row" class="">+15732458055</th>
-                            <td class="">gggasddc13@hotmail.com</td>
-                            <td class="">+17185436789</td>
-                            <td class="">Edit</a></td>
-                            <td class="">Delete</a></td>
-                        </tr>
-
-                    </tbody>
-                </table>
+            <div class="listbox">
+                <h2 class="item-name">Quaid Rodgers: (812) 677-8115</h2>
+                <div class="list-buttons">
+                    <a href="%" class="list-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="bi bi-pencil-square" viewBox="0 0 16 16">
+                            <path
+                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                            <path fill-rule="evenodd"
+                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                        </svg></a>
+                    <a href="%" class="list-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z" />
+                        </svg></a>
+                </div>
+                <div class="list-details">
+                    <b class="list-assigned">Assigned No: +15732458055</b>
+                    <a class="list-email" href="mailto:quaidrodgers13@hotmail.com">quaidrodgers13@hotmail.com</a>
+                </div>
             </div>
-        </main>
-    </div>
+            <div class="listbox">
+                <h2 class="item-name">Quaid Rodgers: (812) 677-8115</h2>
+                <div class="list-buttons">
+                    <a href="%" class="list-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="bi bi-pencil-square" viewBox="0 0 16 16">
+                            <path
+                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                            <path fill-rule="evenodd"
+                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                        </svg></a>
+                    <a href="%" class="list-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z" />
+                        </svg></a>
+                </div>
+                <div class="list-details">
+                    <b class="list-assigned">Assigned No: +15732458055</b>
+                    <a class="list-email" href="mailto:quaidrodgers13@hotmail.com">quaidrodgers13@hotmail.com</a>
+                </div>
+            </div>
+            
+        </div>
+        <hr>
+        <hr>
+
+
+    </main>
 
     <footer class="">
         <div class="">
-            &copy; 2022 - TwilioWebApplication - <a href="/">Privacy</a>
+            No &copy; 2022 - Twilio Management Portal - Quaid Rodgers - CSCISGroup4 - <a href="/">Privacy</a>
         </div>
     </footer>
 
